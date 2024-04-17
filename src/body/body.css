@@ -1,0 +1,157 @@
+.body-image{
+    
+    width: 100%;
+    height: 200px;
+      
+}
+
+.body{
+    
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.body-image img{
+    width: 100%;
+    height: 800px;
+    margin-top: 40px;
+}
+
+.overlay{
+    position: absolute;
+    /* position: fixed; */
+    top: 10;
+    bottom: 0;
+    left:10%;
+    display: flex;
+    /* padding: 20%; */
+    margin: auto;
+    width: 40%;
+    color: white;
+    /* justify-content: left;
+    align-items: flex-start; */
+    
+}
+
+/* Styling for the div with linear gradient background */
+.gradient-div {
+    width: 100%; /* Set the width of the div */
+    height: 100%; /* Set the height of the div */
+    /* Apply the linear gradient background */
+    background: linear-gradient(to bottom right, #1CBDDD 100%, #4DCA79 100%);
+    margin: 20%;
+  }
+
+.caption{
+    margin-bottom: 10%;
+    font-size: 80%;
+    font-weight: bold;
+}
+.btn{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F28D35;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.content-container-description {
+    width: 100%; /* Ensure the width of the container is 100% */
+    display: flex; /* Use Flexbox to arrange the content div */
+    justify-content: center; /* Center the content div horizontally */
+    margin-top: 50%; /* Add some margin on top of the container */
+    margin-bottom: 0%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-container-search {
+    width: 100%; /* Ensure the width of the container is 100% */
+    display: flex; /* Use Flexbox to arrange the content div */
+    justify-content: center; /* Center the content div horizontally */
+     /* Add some margin on top of the container */
+    align-items: justify;
+    flex-wrap: wrap;
+}
+
+.content-container-qna {
+    width: 100%; /* Ensure the width of the container is 100% */
+    display: flex; /* Use Flexbox to arrange the content div */
+    justify-content: center; /* Center the content div horizontally */
+     /* Add some margin on top of the container */
+    margin-top: 5%;
+     margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.content-container-qna h4,h5{
+    color: #6B3CC9;
+   
+}
+
+.content-container-qna h5,p{
+    text-align: left;
+}
+
+
+
+
+.content-bar{
+    
+    justify-content: left;
+    width:50%;
+    padding-left: 0px;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 60%; /* Reduce the width of the content */
+    /* justify-content: space-between; */
+     /* Space out the content evenly */
+}
+
+.content img {
+    width: 40%; /* Image takes up 45% of the width */
+    
+}
+
+.content-text {
+    width: 45%; /* Text takes up 45% of the width */
+    padding-left: 60px; /* Add padding to the left for separation */
+    margin-top: 10%;
+    justify-content: left;
+    align-items: left;
+
+}
+
+h4 {
+    font-size: 1.25rem;
+    /* margin-bottom: 10px; */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    /* Stack content vertically for smaller screens */
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content img,
+    .content-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

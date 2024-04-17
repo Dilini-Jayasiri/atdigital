@@ -98,8 +98,27 @@
     text-align: left;
 }
 
+.accordion-button {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+  }
+  
+  .active-button {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
 
+.accordion-button custom-accordion-button{
+    content: '\2212';
+    font-weight: bold;
+}
 
+/* Change the color of the accordion button text when expanded */
+.accordion-button:not(.collapsed) {
+    color: #6B3CC9; /* Color the text purple when expanded */
+}
+
+.accordion-body{
+    text-align: left;
+}
 
 .content-bar{
     

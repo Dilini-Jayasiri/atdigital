@@ -13,7 +13,7 @@ const Navbar=()=>{
                         <a href="/">
                             <img src={logo} alt="logo" />
                         </a>
-                        <h4 className="navbar-brand">AT DIGITAL</h4>
+                        
                     </div>
                     <div className="navbar-links-container">
                         <p>

@@ -52,7 +52,17 @@ const Navbar=()=>{
                     )}
                     {toggleMenu && (
                        <div className="navbar-menu-container scale-up-center"> 
+                       <div className="close-btn">
+                                <RiCloseLine
+                                    color="#000"
+                                    size={45}
+                                    onClick = {()=> setToggleMEnu(false)}
+                                    />
+                        </div>
                         <div className="navbar-menu-container-links">
+                            <p>
+                                <a href="/">HOME</a>
+                            </p>
                             <p>
                                 <a href="/">SERVICES</a>
                             </p>

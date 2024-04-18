@@ -10,11 +10,11 @@ const Body = () => {
             <div className="body">
                 <div className="body-title">
                     <div className="body-image">
-                        <img src={mainimg} alt="mainimg" />
+                            <img src={mainimg} alt="mainimg" />
                         <div className="overlay">
                             <div className="gradient-div">
                                 <div className="caption">
-                                    <h2>We Crush Your <br/>Competitors, Goals, And <br/>Sales Records - Without <br/>The B.S.</h2>
+                                    <h2>We Crush Your <br className="lg" /> <br className="sm" />Competitors,<br className="md" /><br className="sm" /> Goals, And <br className="lg"/>Sales<br className="sm" /> Records - <br className="md" /> Without<br className="sm" /> <br className="lg"/>The B.S.</h2>
                                 </div>
                                 <button className="btn">GET FREE CONSULTATION</button>
                             </div>

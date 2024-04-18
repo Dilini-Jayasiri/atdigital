@@ -62,12 +62,13 @@ a{
 
 .navbar-links-container p,
 .navbar-menu-container p{
-    color:white;
+    color:black;
     font-weight: 600;
     font-size: 13px;
     line-height: 15px;
     margin: 0 1rem;
     cursor: pointer;
+    text-align: left;
 }
 
 .navbar-menu{
@@ -83,23 +84,32 @@ a{
 
 .navbar-menu-container{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: start;
     flex-direction: column;
-    text-align: end;
-    background-color: #6B3CC9;
-    padding: 2rem;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    margin-top: auto;
-    min-width: 170px;
+    background-color: #ffffff;
+    padding: 1rem;
+    position: fixed; /* Use fixed position */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    height: 100%; /* Full height of the screen */
+    z-index: 999; /* Ensure it's on top of other elements */
 }
 
 .navbar-menu-container p{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
+    text-align: left;
 }
 
+.navbar-menu-container p a{
+    color: black;
+}
+.navbar-menu-container .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
 .scale-up-center
 {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39,0.575,0.565,1) both;
@@ -156,7 +166,7 @@ a{
     }
 
     .navbar-menu-container{
-        top: 60px;
+        /* top: 60px; */
     }
 
 }
